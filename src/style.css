@@ -1,12 +1,43 @@
 body {
   margin: 0 auto;
-  color: white;
+  color: rgba(255, 255, 255, 0.746);
   background-image: url(https://images2.alphacoders.com/238/thumb-1920-238870.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  font-family: "Ysabeau Infant";
 }
-
+h3 {
+  font-size: 25px;
+}
+h3,
+.world {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+a {
+  color: rgb(208, 124, 22);
+  text-decoration: none;
+}
+.selector {
+  margin-top: 25px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  width: 90%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.103);
+  color: rgba(255, 255, 255, 0.746);
+  border-radius: 5px;
+  border-color: rgb(208, 124, 22);
+}
+.world {
+  margin-top: 25px;
+  margin-left: 160px;
+}
+.second-spacing {
+  margin-top: 0px;
+}
 .left {
   float: left;
   width: 60%;
@@ -22,4 +53,58 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+}
+.time {
+  font-size: 30px;
+  margin-top: 33px;
+}
+.time small {
+  font-size: 15px;
+  vertical-align: top;
+  margin-right: 20px;
+}
+.space {
+  margin-top: 180px;
+  margin-left: 60px;
+}
+#this-temp {
+  font-size: 120px;
+}
+#this-city {
+  font-size: 35px;
+  position: relative;
+  top: -30px;
+}
+.data {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+#this-date {
+  margin-left: 60px;
+  font-size: 25px;
+}
+.bottom {
+  margin-bottom: 115px;
+}
+.code {
+  margin-left: -30px;
+  margin-top: 180px;
+}
+
+#this-day {
+  margin-left: 60px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  font-size: 50px;
+}
+.city:hover {
+  background-color: rgba(208, 124, 22, 0.449);
+}
+.color {
+  color: rgb(208, 124, 22);
 }

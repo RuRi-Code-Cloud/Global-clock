@@ -4,57 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>🌍Global Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>🌍</title>
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="column left" style="background-color: #fefdfd00">
-          <h1 id="this-day">Sunday 6:00</h1>
-          <h2 id="this-date">04.10.2023</h2>
+          <div class="color">
+            <h2 id="this-day">Sunday 6:00</h2>
+            <div id="this-date">04.10.2023</div>
+          </div>
           <br />
-
-          <div id="this-temp">35°C</div>
-          <div id="this-city">Ireland, Dublin</div>
+          <div class="space">
+            <div id="this-temp">35°C</div>
+            <div id="this-city">Ireland, Dublin</div>
+            <div class="code">
+              Coded by Rita Rudzite and is
+              <a
+                href="https://github.com/RuRi-Code-Cloud/Global-clock"
+                target="_blank"
+              >
+                open sourced on GitHub</a
+              >
+            </div>
+          </div>
         </div>
         <div class="column right" style="background-color: #0000006f">
-          <h2>World clock</h2>
-          <select>
+          <h2 class="world">WORLD CLOCK</h2>
+          <select class="selector">
             <option value="">Select a city</option>
             <option value="">New York</option>
             <option value="">Paris</option>
             <option value="">Oslo</option>
           </select>
-          <div class="city"></div>
-          <h3>Los Angeles</h3>
-          <div class="data">August 15th 2023</div>
-          <div class="time">14:20:33</div>
-          <div class="city"></div>
-          <h3>Los Angeles</h3>
-          <div class="data">August 15th 2023</div>
-          <div class="time">14:20:33</div>
-          <div class="city"></div>
-          <h3>Los Angeles</h3>
-          <div class="data">August 15th 2023</div>
-          <div class="time">14:20:33</div>
-          <div class="city"></div>
-          <h3>Los Angeles</h3>
-          <div class="data">August 15th 2023</div>
-          <div class="time">14:20:33</div>
-          <br />
-          <br />
-          <br />
+          <div class="city">
+            <div>
+              <h3>Los Angeles</h3>
+              <div class="data">August 15th 2023</div>
+            </div>
+            <div class="time">1:20:33 <small>AM</small></div>
+          </div>
+          <div class="city">
+            <div>
+              <h3>Brasil</h3>
+              <div class="data">August 15th 2023</div>
+            </div>
+            <div class="time">1:20:33 <small>AM</small></div>
+          </div>
+          <div class="city">
+            <div>
+              <h3>Paris</h3>
+              <div class="data">August 15th 2023</div>
+            </div>
+            <div class="time">1:20:33 <small>AM</small></div>
+          </div>
+          <div class="city">
+            <div>
+              <h3>Oslo</h3>
+              <div class="data">August 15th 2023</div>
+            </div>
+            <div class="time">1:20:33 <small>AM</small></div>
+          </div>
+          <div class="city">
+            <div>
+              <h3>Riga</h3>
+              <div class="data">August 15th 2023</div>
+            </div>
+            <div class="time">1:20:33 <small>AM</small></div>
+          </div>
+          <div class="bottom"></div>
         </div>
       </div>
-      <footer>
-        This project was coded by Rita Rudzite and is
-        <a
-          href="https://github.com/RuRi-Code-Cloud/Global-clock"
-          target="_blank"
-        >
-          open sourced on GitHub</a
-        >
-      </footer>
     </div>
   </body>
   <script src="src/index.js"></script>
