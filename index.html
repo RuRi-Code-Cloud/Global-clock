@@ -10,20 +10,24 @@
       href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>🌍</title>
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="column left" style="background-color: #fefdfd00">
-          <div class="color">
-            <h2 id="this-day">Sunday 6:00</h2>
-            <div id="this-date">04.10.2023</div>
-          </div>
-          <br />
-          <div class="space">
-            <div id="this-temp">35°C</div>
-            <div id="this-city">Ireland, Dublin</div>
+          <div id="current">
+            <div class="color">
+              <h2 id="this-day">Sunday 6:00</h2>
+              <div id="this-date">04.10.2023</div>
+            </div>
+            <br />
+            <div class="space">
+              <div id="this-temp">35°C</div>
+              <div id="this-city">Ireland, Dublin</div>
+            </div>
             <div class="code">
               Coded by Rita Rudzite and is
               <a
@@ -39,42 +43,42 @@
           <h2 class="world">WORLD CLOCK</h2>
           <select class="selector">
             <option value="">Select a city</option>
-            <option value="">New York</option>
-            <option value="">Paris</option>
-            <option value="">Oslo</option>
+            <option value="">Atlantic</option>
+            <option value="">Bamako</option>
+            <option value="">South_Pole</option>
           </select>
-          <div class="city">
+          <div class="city" id="alaska">
             <div>
-              <h3>Los Angeles</h3>
-              <div class="data">August 15th 2023</div>
+              <h3>US,Alaska</h3>
+              <div class="date">August 15th 2023</div>
             </div>
             <div class="time">1:20:33 <small>AM</small></div>
           </div>
-          <div class="city">
+          <div class="city" id="singapore">
             <div>
-              <h3>Brasil</h3>
-              <div class="data">August 15th 2023</div>
+              <h3>Asia,Singapore</h3>
+              <div class="date">August 15th 2023</div>
             </div>
             <div class="time">1:20:33 <small>AM</small></div>
           </div>
-          <div class="city">
+          <div class="city" id="oslo">
             <div>
-              <h3>Paris</h3>
-              <div class="data">August 15th 2023</div>
+              <h3>Europe,Oslo</h3>
+              <div class="date">August 15th 2023</div>
             </div>
             <div class="time">1:20:33 <small>AM</small></div>
           </div>
-          <div class="city">
+          <div class="city" id="fiji">
             <div>
-              <h3>Oslo</h3>
-              <div class="data">August 15th 2023</div>
+              <h3>Pacific,Fiji</h3>
+              <div class="date">August 15th 2023</div>
             </div>
             <div class="time">1:20:33 <small>AM</small></div>
           </div>
-          <div class="city">
+          <div class="city" id="sydney">
             <div>
-              <h3>Riga</h3>
-              <div class="data">August 15th 2023</div>
+              <h3>Australia,Sydney</h3>
+              <div class="date">August 15th 2023</div>
             </div>
             <div class="time">1:20:33 <small>AM</small></div>
           </div>
