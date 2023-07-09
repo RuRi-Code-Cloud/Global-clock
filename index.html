@@ -41,18 +41,20 @@
         </div>
         <div class="column right" style="background-color: #0000006f">
           <h2 class="world">WORLD CLOCK</h2>
-          <select class="selector">
+          <select class="selector" id="city">
             <option value="">Select a city</option>
-            <option value="">Atlantic</option>
-            <option value="">Bamako</option>
-            <option value="">South_Pole</option>
+            <option value="Canada/Atlantic">Atlantic</option>
+            <option value="Africa/Bamako">Bamako</option>
+            <option value="Antarctica/South_Pole">South_Pole</option>
           </select>
-          <div class="city" id="alaska">
-            <div>
-              <h3>US,Alaska</h3>
-              <div class="date">August 15th 2023</div>
+          <div id="first-city">
+            <div class="city" id="alaska">
+              <div>
+                <h3>US,Alaska</h3>
+                <div class="date">August 15th 2023</div>
+              </div>
+              <div class="time">1:20:33 <small>AM</small></div>
             </div>
-            <div class="time">1:20:33 <small>AM</small></div>
           </div>
           <div class="city" id="singapore">
             <div>
@@ -63,7 +65,7 @@
           </div>
           <div class="city" id="oslo">
             <div>
-              <h3>Europe,Oslo</h3>
+              <h3>Norway,Oslo</h3>
               <div class="date">August 15th 2023</div>
             </div>
             <div class="time">1:20:33 <small>AM</small></div>

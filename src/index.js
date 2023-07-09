@@ -6,13 +6,15 @@ currentTimeElement.innerHTML = moment().format("dddd HH:mm");
 
 function updateTime() {
   let alaskaElement = document.querySelector("#alaska");
-  let alaskaDateElement = alaskaElement.querySelector(".date");
-  let alaskaTimeElement = alaskaElement.querySelector(".time");
-  alaskaTime = moment().tz("US/Alaska");
-  alaskaDateElement.innerHTML = alaskaTime.format("MMMM Do YYYY");
-  alaskaTimeElement.innerHTML = alaskaTime.format(
-    "h:mm:ss [<small>]A[</small>]"
-  );
+  if (alaskaElement) {
+    let alaskaDateElement = alaskaElement.querySelector(".date");
+    let alaskaTimeElement = alaskaElement.querySelector(".time");
+    alaskaTime = moment().tz("US/Alaska");
+    alaskaDateElement.innerHTML = alaskaTime.format("MMMM Do YYYY");
+    alaskaTimeElement.innerHTML = alaskaTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 
   let singaporeElement = document.querySelector("#singapore");
   let singaporeDateElement = singaporeElement.querySelector(".date");
@@ -46,5 +48,26 @@ function updateTime() {
     "h:mm:ss [<small>]A[</small>]"
   );
 }
+
+function selectedCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.split("/");
+  let cityTime = moment().tz(cityTimeZone);
+  let firstElement = document.querySelector("#first-city");
+  firstElement.innerHTML = `
+            <div class="city" >
+              <div>
+                <h3>${cityName}</h3>
+                <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+              </div>
+              <div class="time">${cityTime.format(
+                "h:mm:ss"
+              )} <small>${cityTime.format("A")}</small></div>
+            </div>`;
+}
+
 updateTime();
 setInterval(updateTime, 1000);
+
+let firstElement = document.querySelector("#city");
+firstElement.addEventListener("change", selectedCity);
