@@ -1,8 +1,12 @@
 let currentElement = document.querySelector("#current");
 let currentDateElement = currentElement.querySelector("#this-date");
 let currentTimeElement = currentElement.querySelector("#this-day");
-currentDateElement.innerHTML = moment().format("MMM.D.YYYY");
-currentTimeElement.innerHTML = moment().format("dddd HH:mm");
+let currentCityElement = currentElement.querySelector("#this-city");
+currentTime = moment.tz.guess();
+
+currentDateElement.innerHTML = moment.tz(currentTime).format("MMM.D.YYYY");
+currentTimeElement.innerHTML = moment.tz(currentTime).format("dddd HH:mm");
+currentCityElement.innerHTML = currentTime.split("/");
 
 function updateTime() {
   let alaskaElement = document.querySelector("#alaska");

@@ -12,7 +12,7 @@ h3 {
 }
 h3,
 .world {
-  margin-top: 30px;
+  margin-top: 28px;
   margin-left: 30px;
   margin-bottom: 0px;
 }
@@ -32,8 +32,8 @@ a {
   border-color: rgb(208, 124, 22);
 }
 .world {
-  margin-top: 25px;
-  margin-left: 160px;
+  margin-top: 0px;
+  margin-left: 140px;
 }
 .second-spacing {
   margin-top: 0px;
@@ -68,17 +68,11 @@ a {
   vertical-align: top;
   margin-right: 20px;
 }
-.space {
-  margin-top: 180px;
-  margin-left: 60px;
-}
-#this-temp {
-  font-size: 120px;
-}
+
 #this-city {
-  font-size: 35px;
-  position: relative;
-  top: -30px;
+  margin-top: 230px;
+  margin-left: 60px;
+  font-size: 55px;
 }
 .date {
   margin-left: 30px;
@@ -92,8 +86,8 @@ a {
   margin-bottom: 115px;
 }
 .code {
-  margin-left: -30px;
-  margin-top: 180px;
+  margin-top: 135px;
+  margin-left: 10px;
 }
 
 #this-day {
@@ -107,4 +101,9 @@ a {
 }
 .color {
   color: rgb(208, 124, 22);
+}
+img {
+  position: relative;
+  right: 10px;
+  top: 20px;
 }
